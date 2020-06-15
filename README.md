@@ -19,12 +19,12 @@
 
 # Setup
 1. Clone this repo to your local machine
-1. Setup packages and dependencies
-  1. From within the user folder, run `npm install`
-1. Seed the database with user information
-  1. Run `npm run seed`
-1. Start a server on a seperate terminal tab in your code editor
-  1. Run `npm run server`
-1. Start the app in your other tab using Expo!
-  1. Run `npm run ios`
-1. Take a Look!
+2. Setup packages and dependencies
+  2. From within the user folder, run `npm install`
+3. Seed the database with user information
+  3. Run `npm run seed`
+4. Start a server on a seperate terminal tab in your code editor
+  4. Run `npm run server`
+5. Start the app in your other tab using Expo!
+  5. Run `npm run ios`
+6. Take a Look!
