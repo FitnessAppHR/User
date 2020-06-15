@@ -114,7 +114,7 @@ const styles = StyleSheet.create({
     fontSize: 22,
     color: 'white',
   },
-  userFeed:{
+  achievementsPane:{
     height: 190,
     width: 386,
     marginLeft: 14,
@@ -123,7 +123,14 @@ const styles = StyleSheet.create({
     borderStyle: 'solid',
     borderColor: 'black',
     borderWidth: 1,
-    backgroundColor: 'white',
+    backgroundColor: 'black',
+  },
+  achievementText:{
+    color:'white',
+    fontSize: 36,
+    fontFamily: 'proxima-nova-xbold',
+    left: 55,
+    top: 70,
   },
 
 });
@@ -203,7 +210,8 @@ export default class UserScreen extends React.Component{
             <Text style={styles.performancePaneText}>PERFORMANCE</Text>
           </View>
 
-          <View style={styles.userFeed}>
+          <View style={styles.achievementsPane}>
+              <Text style={styles.achievementText}>ACHIEVEMENTS</Text>
           </View>
         </View>
         </View>
