@@ -1,6 +1,6 @@
 # Description
 
-## Ascent is a fitness app inspired by at home workouts of COVID-19.
+## Ascend is a fitness app inspired by at home workouts of COVID-19.
 ### Using React Native focusing on iOS, I worked on the app's user overview, including profile page, friends list mock, and user analytics which were built using D3JS. All built in 5 days.
 
 
@@ -8,10 +8,18 @@
 ![Image](https://seeddata-sdc.s3-us-west-1.amazonaws.com/AscendLogo.png)
 
 # App Previews
-<img src="/AscendAppGif.gif?raw=true" width="200px" />
-![UserOverview](https://seeddata-sdc.s3-us-west-1.amazonaws.com/Screen+Shot+2020-06-15+at+11.21.39+AM.jpg)
-![UserAnalytics](https://seeddata-sdc.s3-us-west-1.amazonaws.com/Screen+Shot+2020-06-15+at+11.21.56+AM.jpg)
-![FriendTab](https://seeddata-sdc.s3-us-west-1.amazonaws.com/Screen+Shot+2020-06-15+at+11.21.47+AM.jpg)
+## GIF Overview
+<img src="/AsendAppGif.gif?raw=true" width="200px" />
+## User Profile Page
+<img src="https://seeddata-sdc.s3-us-west-1.amazonaws.com/Screen+Shot+2020-06-15+at+11.21.39+AM.jpg" width="200px" />
+## User Analytics
+<img src="https://seeddata-sdc.s3-us-west-1.amazonaws.com/Screen+Shot+2020-06-15+at+11.21.56+AM.jpg" width="200px" />
+## Friend Page
+<img src="https://seeddata-sdc.s3-us-west-1.amazonaws.com/Screen+Shot+2020-06-15+at+11.21.47+AM.jpg" width="200px" />
+
+
+
+
 
 # Dependencies
 1. Node Package Manager
