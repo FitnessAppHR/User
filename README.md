@@ -9,7 +9,7 @@
 
 # App Previews
 ## GIF Overview
-<img src="/AsendAppGif.gif?raw=true" width="200px" />
+<img src="/AsendAppGif.gif" width="200px" />
 ## User Profile Page
 <img src="https://seeddata-sdc.s3-us-west-1.amazonaws.com/Screen+Shot+2020-06-15+at+11.21.39+AM.jpg" width="200px" />
 ## User Analytics
