@@ -8,7 +8,7 @@
 ![Image](https://seeddata-sdc.s3-us-west-1.amazonaws.com/AscendLogo.png)
 
 # App Previews
-![AppGif](https://seeddata-sdc.s3-us-west-1.amazonaws.com/AsendAppGif.gif)
+<img src="/AscendAppGif.gif?raw=true" width="200px" />
 ![UserOverview](https://seeddata-sdc.s3-us-west-1.amazonaws.com/Screen+Shot+2020-06-15+at+11.21.39+AM.jpg)
 ![UserAnalytics](https://seeddata-sdc.s3-us-west-1.amazonaws.com/Screen+Shot+2020-06-15+at+11.21.56+AM.jpg)
 ![FriendTab](https://seeddata-sdc.s3-us-west-1.amazonaws.com/Screen+Shot+2020-06-15+at+11.21.47+AM.jpg)
