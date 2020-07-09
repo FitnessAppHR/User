@@ -1,12 +1,11 @@
 import { Ionicons } from '@expo/vector-icons';
 import * as WebBrowser from 'expo-web-browser';
 import * as React from 'react';
-import { StyleSheet, Text, View, Image } from 'react-native';
+import { StyleSheet, Text, View, Image, Linking } from 'react-native';
 import { RectButton, ScrollView } from 'react-native-gesture-handler';
 import axios from 'axios';
-
 import BCData from '../dataViz/dailyActivityBCData.js';
-import PieChart from '../dataViz/pieChart2Render.js';
+import PieChart from '../dataViz/pieChartData';
 const styles = StyleSheet.create({
   container: {
     flex: 1,
@@ -62,9 +61,7 @@ const styles = StyleSheet.create({
     marginLeft: 70,
     backgroundColor: 'white',
     marginBottom: 30,
-
   },
-
   pieChart:{
     marginTop: 140,
     marginLeft: 70,
@@ -78,9 +75,31 @@ const styles = StyleSheet.create({
     marginTop: 280,
     alignItems: 'center',
     textAlign: 'center',
+  },
+  goalDesc:{
+    fontFamily: 'proxima-nova',
+    fontSize: 15,
+    color: 'black',
+    position: 'absolute',
+    top: 550,
+    left: 65,
+    textAlign: 'center'
+  },
+  goalDesc2:{
+    fontFamily: 'proxima-nova',
+    fontSize: 15,
+    color: 'black',
+    position: 'absolute',
+    top: 575,
+    left: 35,
+    textAlign: 'center'
+  },
+  exerciseLink:{
+    fontFamily: 'proxima-nova-xbold',
+    fontSize:15,
+    textDecorationLine: 'underline',
   }
 });
-
 export default class UserScreen extends React.Component{
   constructor(props){
     super(props);
@@ -88,7 +107,6 @@ export default class UserScreen extends React.Component{
       user: null,
     }
   }
-
   componentDidMount(){
     axios
       .get('http://localhost:5000/user/TheTest2020')
@@ -98,7 +116,6 @@ export default class UserScreen extends React.Component{
         this.setState({user: user})})
       .catch((error)=>console.error(error))
   }
-
   render(){
     return (
       <View style={styles.container} contentContainerStyle={styles.contentContainer}>
@@ -106,28 +123,26 @@ export default class UserScreen extends React.Component{
         <View>
           <Image style={styles.userHeader}
             source={{uri: `${this.state.user.profileHeaderImage}`, }}/>
-
           <Image style={styles.userImage}
             source={{
               uri:`${this.state.user.profileImage}`}} />
           <View style={styles.userNameBar}>
           <Text style={styles.userNameBarText}>{this.state.user.userName}</Text>
         </View>
-
           <View style={styles.userLinksContainer}>
             <Text style={styles.performancePaneText}>CALORIES THIS WEEK</Text>
             <View style={styles.barChart}>
               <BCData />
             </View>
-
             <Text style={styles.pieChartDesc}>MUSCLE GROUPS</Text>
             <View style={styles.pieChart}>
               {/* UNCOMMENT FOR PIECHART <PieChart />*/}
               <PieChart />
             </View>
+            <Text style={styles.goalDesc}>Based on your goals and similar user data,</Text>
+            <Text style={styles.goalDesc2}>focus on more <Text style={styles.exerciseLink} onPress={() => Linking.openURL('http://google.com')}>Leg Exercises</Text> to improve progress.</Text>
           </View>
         </View>
-
       : <View>
         <Text>Loading</Text>
       </View>}
