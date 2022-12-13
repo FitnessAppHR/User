@@ -33,7 +33,7 @@
     "expo-linking": "^1.0.1",
     "expo-splash-screen": "^0.2.3",
     "expo-web-browser": "~8.2.0",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "firebase": "7.9.0",
     "mongodb": "^3.5.8",
     "mongoose": "^5.9.18",
